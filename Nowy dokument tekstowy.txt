@@ -1,0 +1,9 @@
+Temat 2 Założenie i pomiar osnowy geodezyjnej
+1 okładka
+2 sprawozdanie
+3 projekt osnowy na mapie
+4 opisy topograficzne
+5 dzienniki pomiaru kątów i odległosci
+6 obl poligonu recznie + winkalk
+7 wykaz wsp osnowy
+8 porównanie wsp z pomiarem GPS
