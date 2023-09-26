@@ -1,27 +1,41 @@
 <!DOCTYPE html>
-    <html lang="pl">
-    <link rel="stylesheet" href="styl1.css">
-        <head>
-            <meta charset="utf-8">
-        </head>
-        <body>
-            <div id="górny">
-                <p><h1>Bajka</h1></p>
-            </div>
-            <div id="panel_lewy">
-                <p><a href="https://maciejg2007.github.io/tabela.github.io/" target="_blank">
-                    <img src="https://maciejg2007.github.io/tabela.github.io/" style="max-width:100%;" alt="screen 1">
-                    </a></p>
-            </div>
-            <div id="panel_środkowy">
-                <p>1</p>                
-            </div>
-            <div id="panel_prawy">
-                <p>1</p>
-            </iframe>
-            </div>
-            <div id="stopka">
-                <p>1</p>
-            </div>
-        </body>
-    </html>
+<html>
+<head>
+    <title>Moja Witryna</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td><img src="https://cdn.podroze.smcloud.net/t/photos/t/146001/jesien-w-polsce-zdjecie-ilustracyjne_1153924.jpg" alt="Foto jesien"></td>
+            <td><a href="http://zsdios.pl/">Technikum</a></td>
+            <td>Fetisov Viktor</td>
+            <td><span id="data"></span></td>
+            <td><img src="https://polska-org.pl/foto/7231/Zespol_Szkol_Drzewnych_i_Ochrony_Srodowiska_im_Jana_Zamoyskiego_ul_Browarna_Zwierzyniec_7231688.jpg" alt="Foto Technikum"></td>
+        </tr>
+    </table>
+
+    <script>
+        function aktualizujDate() {
+            const dataElement = document.getElementById("data");
+            const dzisiaj = new Date();
+            const dzien = dzisiaj.getDate();
+            const miesiac = dzisiaj.getMonth() + 1;
+            const rok = dzisiaj.getFullYear();
+            const dataAktualna = dzien + '/' + miesiac + '/' + rok;
+            dataElement.textContent = dataAktualna;
+        }
+
+        // Wywołaj funkcję aktualizacji daty przy załadowaniu strony
+        aktualizujDate();
+
+        // Ustaw interwał odświeżania daty (np. co 1 sekundę)
+        setInterval(aktualizujDate, 1000);
+    </script>
+</body>
+</html>
+
+
+
+
+
+
