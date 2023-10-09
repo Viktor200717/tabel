@@ -2,24 +2,79 @@
 <html>
 <head>
     <title>Moja Witryna</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: rgb(241, 217, 182);
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 1400px;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    td {
+        text-align: center;
+        border: 1px solid rgb(0, 0, 0);
+        padding: 10px;
+    }
+    img {
+        max-width: 60%;
+        height: auto;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    date {
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .kolor
+    {
+        
+        background-color: rgb(120, 187, 118);
+    }
+    p{
+        text-align: center;
+    }
+    </style>
 </head>
 <body> 
     <div class="conteiner">
     <table border="1">
-        <td><a href="Untitled-1.html">Projekt 03 - grafika</a></td>
+        <p> <a href="Untitled-1.html">Projekt 03 - grafika</a> </p>
+        <div width="100%" height="100% class=" container"="">
+    <table>
         <tbody>
-        <tr> 
-            <td rowspan="3"> <img src="https://cdn.podroze.smcloud.net/t/photos/t/146001/jesien-w-polsce-zdjecie-ilustracyjne_1153924.jpg" alt="Foto jesien"></td>
-            <td><a href="http://zsdios.pl/">Technikum</a></td>
-            <td>Fetisov Viktor</td>
-            <td id="data"> </td>
-            <td rawspan="2"><img src="https://ias24.eu/gallery/cache/600x0_zespol-szkol-drzewnych-2.jpg" alt="Foto Technikum"></td>
+            <tr>
+            <td class="kolor" rowspan="3">
+            <img src="https://cdn.podroze.smcloud.net/t/photos/t/146001/jesien-w-polsce-zdjecie-ilustracyjne_1153924.jpg" alt="Foto jesien"></td>
+            <td>Fetisov<br>Viktor</td>
+            <td class="kolor" rowspan="3">
+            <img width="100%" height="100% " src="https://ias24.eu/gallery/cache/600x0_zespol-szkol-drzewnych-2.jpg" alt="Foto Technikum"></td>
         </tr>
-       
+        <tr>
+            <td style="width: 200px;"><a href="http://zsdios.pl/">Techikum</a></td>
+        </tr>
+        <tr>
+             <td id="data"> </td>
+        </tr>
     </tbody>
-    </table>
-
-    <script>
+</table>
+</div>
+        <script>
         function aktualizujDate() {
             const dataElement = document.getElementById("data");
             const dzisiaj = new Date();
